@@ -1,0 +1,23 @@
+<?php
+
+
+enum StatusConsulta
+{
+	
+	case Pendente;
+	case Cancelada;
+	case Confirmada;
+	case Finalizada;
+
+
+
+    public function getStatus(StatusConsulta $stat): string
+    {
+        return $this->name;
+    }
+
+
+}
+
+
+?>
