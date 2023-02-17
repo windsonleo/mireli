@@ -99,7 +99,7 @@
 /*$servername = "localhost";
 $username = "root";
 $password = "";
-$dbname="agenda";
+$dbname="agenda";*/
     
 $servername = "hcontainers-us-west-31.railway.app";
 $username = "root";
@@ -107,7 +107,7 @@ $password = "lW8y65JQW7StMH5N2aGL";
 $dbname="railway";
 
 // Create connection
-$conn = mysqli_connect($servername, $username);
+$conn = mysqli_connect($servername, $username,$password,$dbname);
 $banco = mysqli_select_db($conn,$dbname);
 mysqli_set_charset($conn,'utf8');
 // Check connection
@@ -122,7 +122,7 @@ $sql3 = mysqli_query($conn,"select * from consulta") or die("Erro");
 
 $dados = mysqli_num_rows($sql);
 $dados2 = mysqli_num_rows($sql2);
-$dados3 = mysqli_num_rows($sql3);*/
+$dados3 = mysqli_num_rows($sql3);
 
  ?>
 
