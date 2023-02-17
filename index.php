@@ -96,10 +96,15 @@
 
     <?php 
 //include "conexao.php";
-$servername = "localhost";
+/*$servername = "localhost";
 $username = "root";
 $password = "";
-$dbname="agenda";
+$dbname="agenda";*/
+    
+$servername = "hcontainers-us-west-31.railway.app";
+$username = "root";
+$password = "lW8y65JQW7StMH5N2aGL";
+$dbname="railway";
 
 // Create connection
 $conn = mysqli_connect($servername, $username);
